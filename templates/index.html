@@ -12,6 +12,10 @@
                 padding: 20px;
                 border-radius: 20px
             }
+
+            button {
+                margin: 10px
+            }
         </style>
 
         <title>Simple login with Flask</title>
@@ -20,8 +24,12 @@
         <div id="main">
             <h1>Flask Authentication!</h1>
             <p>This is a test server for logging in users using Flask</p>
-            <button type="button" class="btn btn-light">Sign up</button>
-            <button type="button" class="btn btn-light">Sign in</button>
+            <form action="{{ url_for('signup') }}">
+                <button type="submit" class="btn btn-light">Sign up</button>
+            </form>
+            <form action="{{ url_for('login') }}">
+                <button type="submit" class="btn btn-light">Log in</button>
+            </form>
         </div>
     </body>
 </html>
