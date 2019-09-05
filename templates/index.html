@@ -12,7 +12,7 @@
                 border-radius: 20px
             }
 
-            button {
+            button, a {
                 margin: 10px;
             }
         </style>
@@ -29,6 +29,7 @@
             <form action="{{ url_for('login') }}">
                 <button type="submit" class="btn btn-light">Log in</button>
             </form>
+            <a href="{{ url_for('users') }}" class="btn btn-primary"> Users</a>
         </div>
     </body>
 </html>
