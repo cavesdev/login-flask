@@ -10,3 +10,4 @@ class Users(db.Model):
     password = db.Column(db.String, nullable=False)
 
 
+
